@@ -2,11 +2,133 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <title>Ohmyfood</title>
 </head>
+
 <body>
+
+    <header>
+        <nav>
+            <a href="index.html">
+                <img class="logo" src="assets/images/logo/ohmyfood@2x.svg" alt="logo ohmyfood">
+            </a>
+        </nav>
+        
+        <article class="search-bar">
+            <form method="get" action="#" role="search">
+                    <button type="button" id="location"><i class="fa-solid fa-location-dot"></i></button>
+                    <input type="search" id="text-area" name="q" placeholder="Paris, Belleville">
+            </form>
+        </article>
+    </header>
+
+
+
+
+    <main>
+        <section class="section-hero">
+            <h1>Réservez le menu qui vous convient</h1>
+            <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+<!-- REVOIR HTML BUTTON -->
+            <button type="button"><a href="#restaurants">Explorer nos restaurants</a></button>
+        </section>
+
+
+        <section class="section-fonct">
+            <h2 class="section-title">Fonctionnement</h2>
+
+            <div class="fonct-cards-list">
+                <article class="fonct-card">
+                    <span class="badge-number">1</span>
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <h3>Choisissez un restaurant</h>
+                </article>
+
+                <article class="fonct-card">
+                    <span class="badge-number">2</span>
+<!-- MANQUE ICONE -->
+                    <h3>Composez votre menu</h3>
+                </article>
+
+                <article class="fonct-card">
+                    <span class="badge-number">3</span>
+                    <i class="fa-sharp fa-solid fa-store"></i>
+                    <h3>Dégustez au restaurant</h3>
+                </article>
+            </div>
+        </section>
+
+
+        <section class="section-restos">
+            <h2 class="section-title" id="restaurants">Restaurants</h2>
     
-</body>
+            <div class="restos-cards-list">
+
+                <a href="#"><article class="restos-card">
+                    <img class="restos-img" src="./assets/images/restaurants/la-palette-du-gout.jpg" alt="photo d'un plat du restaurant La palette du goût">
+                    <span class="badge-new">Nouveau</span>
+                    <div class="restos-card-content">
+                        <h3 class="restos-name">La palette du goût</h3>
+                        <h4 class="restos-location">Ménilmontant</h4>
+                        <i class="fa-sharp fa-regular fa-heart"></i>
+                        <i class="fa-sharp fa-solid fa-heart"></i>
+                    </div>
+                </article></a>
+
+                <a href="#"><article class="restos-card">
+                    <img class="restos-img" src="./assets/images/restaurants/la-note-enchantee.jpg" alt="photo d'un plat du restaurant La note enchantée">
+                    <span class="badge-new">Nouveau</span>
+                    <div class="restos-card-content">
+                        <h3 class="restos-name">La note enchantée</h3>
+                        <h4 class="restos-location">Charonne</h4>
+                        <i class="fa-sharp fa-regular fa-heart"></i>
+                        <i class="fa-sharp fa-solid fa-heart"></i>
+                    </div>
+                </article></a>
+
+                <a href="#"><article class="restos-card">
+                    <img class="restos-img" src="./assets/images/restaurants/a-la-francaise.jpg" alt="photo d'un plat du restaurant À la française">
+                    <div class="restos-card-content">
+                        <h3 class="restos-name">À la française</h3>
+                        <h4 class="restos-location">Cité Rouge</h4>
+                        <i class="fa-sharp fa-regular fa-heart"></i>
+                        <i class="fa-sharp fa-solid fa-heart"></i>
+                    </div>
+                </article></a>
+
+                <a href="#"><article class="restos-card">
+                    <img class="restos-img" src="./assets/images/restaurants/le-delice-des-sens.jpg" alt="photo d'un plat du restaurant Le délice des sens">
+                    <div class="restos-card-content">
+                        <h3 class="restos-name">Le délice des sens</h3>
+                        <h4 class="restos-location">Folie-Méricourt</h4>
+                        <i class="fa-sharp fa-regular fa-heart"></i>
+                        <i class="fa-sharp fa-solid fa-heart"></i>
+                    </div>
+                </article></a>
+
+            </div>
+
+        </section>
+    </main>
+
+
+
+    <footer>
+        <img class="logo" src="assets/images/logo/ohmyfood@2x.svg" alt="logo ohmyfood">
+        <ul class="footer-list">
+<!-- AJOUTER ICON -->
+            <li><a class="footer-link" href="#">Proposer un restaurant</a></li>
+            <li><a class="footer-link" href="#">Devenir partenaire</a></li>
+            <li><a class="footer-link" href="#">Mentions légales</a></li>
+            <li><a class="footer-link" href="#">Contact</a></li>
+        </ul>
+    </footer>
+    
+</body> 
 </html>
