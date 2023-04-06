@@ -1,0 +1,26 @@
+.search-bar {
+    height: 50px;
+    background-color: #EAEAEA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar-content {
+    height: 19px;
+}
+
+.fa-location-dot {
+    font-size: 1em;
+    color: #353535;
+}
+
+.search-text {
+    width: 140px;
+    border-style: none;
+    background: none;
+    font-weight: 500;
+    font-size: 1em;
+    color: #353535;
+    padding-left: 15px;
+}

@@ -1,3 +1,58 @@
-img {
-  width: 50px;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  max-width: 768px;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  font-family: "Shrikhand", cursive;
+  font-family: "Roboto", sans-serif;
+}
+
+nav {
+  position: relative;
+  height: 65px;
+  width: 100%;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  font-family: "Shrikhand";
+  font-size: 1.9em;
+  color: #101010;
+}
+
+.search-bar {
+  height: 50px;
+  background-color: #EAEAEA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar-content {
+  height: 19px;
+}
+
+.fa-location-dot {
+  font-size: 1em;
+  color: #353535;
+}
+
+.search-text {
+  width: 140px;
+  border-style: none;
+  background: none;
+  font-weight: 500;
+  font-size: 1em;
+  color: #353535;
+  padding-left: 15px;
 }/*# sourceMappingURL=style.css.map */
