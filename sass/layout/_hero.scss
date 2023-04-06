@@ -1,0 +1,21 @@
+@use "../abstracts/" as *;
+
+
+.section-hero {
+    height: 290px;
+    background-color: $light-grey;
+    text-align: center;
+
+    p {
+        font-size: 1.1em;
+        font-weight: 300;
+        padding-bottom: 33px;
+    }
+}
+
+h1 {
+    font-size: 1.5em;
+    font-weight: 700;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
