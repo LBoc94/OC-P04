@@ -1,0 +1,15 @@
+@use "../abstracts/" as *;
+
+.badge-number {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: $main-color;
+    color: white;
+    font-size: 0.8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 10px;
+}

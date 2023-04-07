@@ -1,0 +1,17 @@
+.section-fonct {
+    height: 400px;
+
+    h2 {
+        padding-left: 20px;
+        padding-bottom: 35px;
+    }
+}
+
+
+.fonct-cards-list {
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
