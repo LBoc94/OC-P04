@@ -1,0 +1,31 @@
+@use "../abstracts/" as *;
+
+footer {
+    height: 180px;
+    background-color: $dark-grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 20px;
+    
+    a {
+        color: white;
+    }
+
+    .logo {
+        @include logo-typo(white,1em)
+    }
+}
+
+.footer-list {
+    height: 100px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    i {
+        display: inline-block;
+        width: 30px;
+    }
+}

@@ -1,3 +1,6 @@
+@use "../abstracts/" as *;
+
+
 nav {
     position: relative;
     height: 65px;
@@ -6,4 +9,8 @@ nav {
     display: grid;
     align-items: center;
     justify-content: center;
+
+    .logo {
+        @include logo-typo(black,1.9em)
+    }
 }
