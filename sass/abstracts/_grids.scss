@@ -1,0 +1,26 @@
+.restos-card {
+    display: grid;
+    grid-template-columns: 9fr 1fr 1fr;
+    grid-template-rows: 175px 1fr 2fr 2fr 1fr;
+    align-items: center;
+}
+
+.restos-img {
+    grid-column: 1 / 4;
+}
+
+.restos-name {
+    grid-row-start: 3;
+    margin-left: 15px;
+}
+
+.restos-location {
+    grid-row-start: 4;
+    margin-left: 15px;
+}
+
+.fa-heart {
+    grid-column: 2 / 4;
+    grid-row: 3/5;
+    justify-self: center;
+}
