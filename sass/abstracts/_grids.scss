@@ -1,5 +1,16 @@
 @use "variables" as *;
 
+nav {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 8fr 1fr;
+
+    .logo {
+        grid-column-start: 2;
+    }
+}
+
 .restos-card {
     display: grid;
     grid-template-columns: 9fr 1fr 1fr;

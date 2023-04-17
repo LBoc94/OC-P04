@@ -20,6 +20,16 @@ a {
   padding-left: 20px;
 }
 
+nav {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 1fr 8fr 1fr;
+}
+nav .logo {
+  grid-column-start: 2;
+}
+
 .restos-card {
   display: grid;
   grid-template-columns: 9fr 1fr 1fr;
@@ -69,9 +79,10 @@ nav {
   height: 65px;
   width: 100%;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
-  display: grid;
-  align-items: center;
-  justify-content: center;
+}
+nav .fa-arrow-left {
+  font-size: 20px;
+  color: #353535;
 }
 
 footer {
