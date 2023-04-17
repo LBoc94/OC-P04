@@ -1,11 +1,11 @@
 @use "../abstracts/" as *;
 
 footer {
-    height: 180px;
+    height: 190px;
     background-color: $dark-grey;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     padding-left: 20px;
     
     a {
@@ -13,7 +13,8 @@ footer {
     }
 
     .logo {
-        @include logo-typo(white,1.2em)
+        height: 55%;
+        filter: invert(1);
     }
 }
 

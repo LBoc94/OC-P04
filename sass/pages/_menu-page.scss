@@ -1,0 +1,69 @@
+@use "../abstracts/" as *;
+
+.menu-img {
+    width: 100%;
+    height: 275px;
+    object-fit: cover;
+}
+
+.full-menu {
+    background-color: $light-grey;
+    padding: 0px 15px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    border-radius: 40px;
+    position: relative;
+    margin-top: -40px;
+}
+
+.menu-resto {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: baseline;
+    
+    h1 {
+        font-family: Shrikhand;
+        font-size: 1.7em;
+        font-weight: 400;
+    }
+}
+
+.menu-section-title {
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 300;
+
+    &::after {
+        content: '';
+        margin-top: 5px;
+        display: block;
+        height: 3px;
+        width: 40px;
+        background-color: $tertiary-color;
+    }
+}
+
+.plat-title {
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.plat-sub {
+    font-size: 0.9em;
+    font-weight: 300;
+}
+
+.plat-price {
+    font-size: 0.9em;
+    font-weight: 700;
+}
+
+.menu-section {
+    width: 100%;
+    margin-bottom: 35px;
+}
+
+.menu-button {
+    margin-bottom: 50px;
+}
