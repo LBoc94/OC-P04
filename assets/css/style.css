@@ -356,6 +356,11 @@ footer .logo {
   font-family: Shrikhand;
   font-size: 1.7em;
   font-weight: 400;
+  margin: 30px 0px;
+  padding-right: 40px;
+}
+.menu-resto i {
+  font-size: 23px;
 }
 
 .menu-section-title {
