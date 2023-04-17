@@ -1,3 +1,25 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  max-width: 768px;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  font-family: "Shrikhand", cursive;
+  font-family: "Roboto", sans-serif;
+}
+
+.section-title {
+  font-size: 1.5em;
+  font-weight: 700;
+  padding-left: 20px;
+}
+
 .restos-card {
   display: grid;
   grid-template-columns: 9fr 1fr 1fr;
@@ -40,28 +62,6 @@
   grid-column-start: 2;
   grid-row-start: 3;
   color: #353535;
-}
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  max-width: 768px;
-}
-
-a {
-  text-decoration: none;
-}
-
-* {
-  font-family: "Shrikhand", cursive;
-  font-family: "Roboto", sans-serif;
-}
-
-.section-title {
-  font-size: 1.5em;
-  font-weight: 700;
-  padding-left: 20px;
 }
 
 nav {
