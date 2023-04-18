@@ -39,7 +39,8 @@ nav {
 }
 
 
-.menu-content {
+.menu-infos {
+    width: 100%;
     display: grid;
     grid-template-columns: 9fr 1fr;
     grid-template-rows: 1fr 2fr 2fr 1fr;

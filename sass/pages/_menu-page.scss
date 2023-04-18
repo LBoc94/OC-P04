@@ -50,6 +50,11 @@
     }
 }
 
+.menu-content {
+    display: flex;
+   flex-direction: row;
+}
+
 .plat-title {
     font-size: 1.1em;
     font-weight: 500;
@@ -75,9 +80,24 @@
 }
 
 .menu-content i {
-    display: none;
-}
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    color: white;
+    width: 0px;
+    height: 100%;
+    font-size: 0;
+    border-radius: 0 15px 15px 0;
+    background-color: $tertiary-color;
+    transition: all 600ms 150ms ease-in-out;
+ }
 
-.menu-content:hover i {
-    display: initial;
-}
+ .menu-content:hover i {
+    height: 100%;
+    width: 60px;
+    font-size: 20px;
+  }
+
+
+

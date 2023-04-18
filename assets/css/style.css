@@ -53,22 +53,23 @@ nav .logo {
   justify-self: center;
 }
 
-.menu-content {
+.menu-infos {
+  width: 100%;
   display: grid;
   grid-template-columns: 9fr 1fr;
   grid-template-rows: 1fr 2fr 2fr 1fr;
   align-items: center;
   padding-left: 20px;
 }
-.menu-content .plat-title {
+.menu-infos .plat-title {
   grid-column-start: 1;
   grid-row-start: 2;
 }
-.menu-content .plat-sub {
+.menu-infos .plat-sub {
   grid-column-start: 1;
   grid-row-start: 3;
 }
-.menu-content .plat-price {
+.menu-infos .plat-price {
   grid-column-start: 2;
   grid-row-start: 3;
   color: #353535;
@@ -377,6 +378,11 @@ footer .logo {
   background-color: #99E2D0;
 }
 
+.menu-content {
+  display: flex;
+  flex-direction: row;
+}
+
 .plat-title {
   font-size: 1.1em;
   font-weight: 500;
@@ -402,9 +408,21 @@ footer .logo {
 }
 
 .menu-content i {
-  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  color: white;
+  width: 0px;
+  height: 100%;
+  font-size: 0;
+  border-radius: 0 15px 15px 0;
+  background-color: #99E2D0;
+  transition: all 600ms 150ms ease-in-out;
 }
 
 .menu-content:hover i {
-  display: initial;
+  height: 100%;
+  width: 60px;
+  font-size: 20px;
 }/*# sourceMappingURL=style.css.map */
