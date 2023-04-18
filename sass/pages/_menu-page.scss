@@ -73,3 +73,11 @@
 .menu-button {
     margin-bottom: 50px;
 }
+
+.menu-content i {
+    display: none;
+}
+
+.menu-content:hover i {
+    display: initial;
+}
