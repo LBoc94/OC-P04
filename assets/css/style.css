@@ -20,6 +20,51 @@ a {
   padding-left: 20px;
 }
 
+.empty-heart {
+  opacity: 1;
+}
+.empty-heart:hover {
+  opacity: 0;
+  transition: all 700ms ease-in-out;
+}
+
+.full-heart {
+  opacity: 0;
+}
+.full-heart:hover {
+  opacity: 1;
+  transition: all 700ms ease-in-out;
+}
+
+.menu-section {
+  animation-duration: 1.5s;
+  animation-delay: 0.4s;
+  animation-fill-mode: backwards;
+  animation-name: fadein;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    transform: scale(0.8, 0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+.entree {
+  animation-delay: 0.5s;
+}
+
+.plats {
+  animation-delay: 0.9s;
+}
+
+.desserts {
+  animation-delay: 1.4s;
+}
+
 nav {
   display: grid;
   justify-items: center;
@@ -73,6 +118,26 @@ nav .logo {
   grid-column-start: 2;
   grid-row-start: 3;
   color: #353535;
+}
+
+.menu-resto {
+  display: grid;
+  grid-template-columns: 9fr 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-items: center;
+}
+.menu-resto h1 {
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
+.menu-resto .empty-heart {
+  grid-column-start: 2;
+  grid-row-start: 1;
+}
+.menu-resto .full-heart {
+  grid-column-start: 2;
+  grid-row-start: 1;
 }
 
 nav {
@@ -159,10 +224,6 @@ footer .logo {
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
   -webkit-text-stroke-width: 0px;
-}
-
-.empty-heart {
-  display: none !important;
 }
 
 .search-bar {
@@ -282,15 +343,15 @@ footer .logo {
   background-color: #F6F6F6;
   text-align: center;
   margin-bottom: 45px;
-  padding: 0 3px;
+  padding: 0 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 .section-hero h1 {
   font-size: 1.5em;
   font-weight: 700;
-  padding-top: 40px;
   padding-bottom: 20px;
 }
 .section-hero p {
@@ -348,11 +409,6 @@ footer .logo {
   margin-top: -40px;
 }
 
-.menu-resto {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: baseline;
-}
 .menu-resto h1 {
   font-family: Shrikhand;
   font-size: 1.7em;
@@ -411,9 +467,8 @@ footer .logo {
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
   color: white;
-  width: 0px;
+  width: 0;
   height: 100%;
   font-size: 0;
   border-radius: 0 15px 15px 0;
@@ -425,33 +480,4 @@ footer .logo {
   height: 100%;
   width: 60px;
   font-size: 20px;
-}
-
-.menu-section {
-  animation-duration: 1.5s;
-  animation-delay: 0.5s;
-  animation-fill-mode: backwards;
-  animation-name: fadein;
-}
-
-@keyframes fadein {
-  0% {
-    opacity: 0;
-    transform: scale(0.8, 0.8);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1, 1);
-  }
-}
-.entree {
-  animation-delay: 0.6s;
-}
-
-.plats {
-  animation-delay: 1s;
-}
-
-.desserts {
-  animation-delay: 1.5s;
 }/*# sourceMappingURL=style.css.map */
