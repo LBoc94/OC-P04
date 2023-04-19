@@ -20,30 +20,38 @@ a {
   padding-left: 20px;
 }
 
-.empty-heart {
-  opacity: 1;
+.hearts {
+  position: relative;
+  width: 23px;
+  height: 23px;
 }
-.empty-heart:hover {
+.hearts:hover .empty-heart {
   opacity: 0;
-  transition: all 700ms ease-in-out;
+}
+.hearts:hover .full-heart {
+  height: 100%;
+}
+
+.empty-heart {
+  position: absolute;
+  opacity: 1;
+  transition: opacity 600ms ease-in-out;
 }
 
 .full-heart {
-  opacity: 0;
-}
-.full-heart:hover {
-  opacity: 1;
-  transition: all 700ms ease-in-out;
+  position: absolute;
+  height: 0;
+  transition: height 600ms ease-in-out;
 }
 
 .menu-section {
   animation-duration: 1.5s;
   animation-delay: 0.4s;
   animation-fill-mode: backwards;
-  animation-name: fadein;
+  animation-name: slidein;
 }
 
-@keyframes fadein {
+@keyframes slidein {
   0% {
     opacity: 0;
     transform: scale(0.8, 0.8);
@@ -97,6 +105,11 @@ nav .logo {
   grid-row: 3/5;
   justify-self: center;
 }
+.restos-card .hearts {
+  grid-column: 2/4;
+  grid-row: 3/5;
+  justify-self: center;
+}
 
 .menu-infos {
   width: 100%;
@@ -136,6 +149,10 @@ nav .logo {
   grid-row-start: 1;
 }
 .menu-resto .full-heart {
+  grid-column-start: 2;
+  grid-row-start: 1;
+}
+.menu-resto .test {
   grid-column-start: 2;
   grid-row-start: 1;
 }

@@ -36,6 +36,12 @@ nav {
         grid-row: 3/5;
         justify-self: center;
     }
+
+    .hearts {
+        grid-column: 2 / 4;
+        grid-row: 3/5;
+        justify-self: center;
+    }
 }
 
 
@@ -84,5 +90,11 @@ nav {
     .full-heart {
         grid-column-start: 2;
         grid-row-start: 1;
+    }
+
+    .test {
+        grid-column-start: 2;
+        grid-row-start: 1;
+ 
     }
 }
