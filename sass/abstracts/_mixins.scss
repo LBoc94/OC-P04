@@ -4,3 +4,17 @@
 //     font-size: $font-size;
 // }
 
+
+// BREAKPOINTS //
+
+@mixin tablet {
+    @media (min-width: 729px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: 1024px) {
+        @content;
+    }
+}

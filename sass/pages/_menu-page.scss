@@ -27,7 +27,7 @@
     }
 
     i {
-        font-size: 23px;
+        font-size: 1.4em;
     }
 }
 
@@ -54,16 +54,19 @@
 .plat-title {
     font-size: 1.1em;
     font-weight: 500;
+    @extend %txtoverflow;
 }
 
 .plat-sub {
     font-size: 0.9em;
     font-weight: 300;
+    @extend %txtoverflow;
 }
 
 .plat-price {
     font-size: 0.9em;
     font-weight: 700;
+    padding-left: 7px;
 }
 
 .menu-section {
