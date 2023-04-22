@@ -529,6 +529,18 @@ footer .logo {
   position: relative;
   margin-top: -40px;
 }
+@media (min-width: 729px) {
+  .full-menu {
+    width: 90%;
+    margin: -40px 5% 0 5%;
+  }
+}
+@media (min-width: 1024px) {
+  .full-menu {
+    width: 80%;
+    margin: -40px 10% 0 10%;
+  }
+}
 
 .menu-resto h1 {
   font-family: Shrikhand;
@@ -573,7 +585,8 @@ footer .logo {
 .plat-price {
   font-size: 0.9em;
   font-weight: 700;
-  padding-left: 7px;
+  padding-right: 10px;
+  justify-self: center;
 }
 
 .menu-section {
