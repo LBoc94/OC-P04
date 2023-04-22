@@ -8,6 +8,12 @@ footer {
     justify-content: center;
     padding-left: 20px;
 
+    @include tablet {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
     @include desktop {
         height: 115px;
         padding-bottom: 30px;
@@ -25,6 +31,10 @@ footer {
         height: 55%;
         filter: invert(1);
 
+        @include tablet {
+            height: 25px;
+        }
+
         @include desktop {
             height: 20px;
             padding-right: 25px;
@@ -38,6 +48,10 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @include tablet {
+        align-items: flex-end;
+    }
 
     @include desktop {
         flex-direction: row;

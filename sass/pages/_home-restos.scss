@@ -3,6 +3,10 @@
 .section-home-restos {
     background-color: $light-grey;
     padding: 50px 20px 65px 20px;
+
+    @include tablet {
+        padding: 50px;
+    }
     
     @include desktop {
         padding: 35px 90px 30px 90px;
@@ -23,7 +27,7 @@
     justify-content: center;
     gap: 20px;
 
-    @include desktop {
+    @include tablet {
         row-gap: 50px;
         justify-content: space-between;
     }
@@ -31,7 +35,7 @@
     a {
         width: 100%;
 
-    @include desktop {
+    @include tablet {
         width: 45%;
     }}
 }

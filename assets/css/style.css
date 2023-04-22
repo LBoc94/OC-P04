@@ -180,6 +180,13 @@ footer {
   justify-content: center;
   padding-left: 20px;
 }
+@media (min-width: 729px) {
+  footer {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
 @media (min-width: 1024px) {
   footer {
     height: 115px;
@@ -197,6 +204,11 @@ footer .logo {
   height: 55%;
   filter: invert(1);
 }
+@media (min-width: 729px) {
+  footer .logo {
+    height: 25px;
+  }
+}
 @media (min-width: 1024px) {
   footer .logo {
     height: 20px;
@@ -210,6 +222,11 @@ footer .logo {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+@media (min-width: 729px) {
+  .footer-list {
+    align-items: flex-end;
+  }
 }
 @media (min-width: 1024px) {
   .footer-list {
@@ -421,7 +438,7 @@ footer .logo {
 }
 
 .section-fonct {
-  height: 400px;
+  height: 410px;
   display: grid;
   align-content: center;
   justify-content: center;
@@ -454,6 +471,11 @@ footer .logo {
   background-color: #F6F6F6;
   padding: 50px 20px 65px 20px;
 }
+@media (min-width: 729px) {
+  .section-home-restos {
+    padding: 50px;
+  }
+}
 @media (min-width: 1024px) {
   .section-home-restos {
     padding: 35px 90px 30px 90px;
@@ -474,7 +496,7 @@ footer .logo {
   justify-content: center;
   gap: 20px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 729px) {
   .restos-cards-list {
     row-gap: 50px;
     justify-content: space-between;
@@ -483,7 +505,7 @@ footer .logo {
 .restos-cards-list a {
   width: 100%;
 }
-@media (min-width: 1024px) {
+@media (min-width: 729px) {
   .restos-cards-list a {
     width: 45%;
   }
