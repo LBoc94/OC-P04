@@ -5,7 +5,7 @@ footer {
     background-color: $dark-grey;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     padding-left: 20px;
 
     @include tablet {
@@ -28,7 +28,7 @@ footer {
     }
 
     .logo {
-        height: 55%;
+        height: 20px;
         filter: invert(1);
 
         @include tablet {

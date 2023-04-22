@@ -7,9 +7,9 @@
     justify-content: center;
 
     @include desktop {
+        display: block;
         height: 230px;
         padding: 50px 90px 50px 90px;
-        justify-content: initial;
     }
 
     h2 {
