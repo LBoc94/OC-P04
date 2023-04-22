@@ -1,5 +1,16 @@
+@use "../abstracts/" as *;
+
 .section-fonct {
     height: 400px;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+
+    @include desktop {
+        height: 230px;
+        padding: 50px 90px 50px 90px;
+        justify-content: initial;
+    }
 
     h2 {
         padding-bottom: 35px;
@@ -8,9 +19,13 @@
 
 
 .fonct-cards-list {
-    height: 270px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    gap: 30px;
+
+    @include desktop {
+        flex-direction: row;
+    }
 }

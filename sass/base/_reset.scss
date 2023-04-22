@@ -1,10 +1,18 @@
+@use "../abstracts/" as *;
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    max-width: 768px;
+    // max-width: 768px;
 }
 
 a {
     text-decoration: none;
 }
+
+// main {
+//     @include desktop {
+//         margin : 0 170px;
+//     }
+// }

@@ -2,17 +2,36 @@
 
 .section-home-restos {
     background-color: $light-grey;
-    padding-top: 50px;
-    padding-bottom: 65px;
+    padding: 50px 20px 65px 20px;
+    
+    @include desktop {
+        padding: 35px 90px 30px 90px;
+    }
 
     .section-title {
     padding-bottom: 20px;
+
+    @include desktop {
+        padding-bottom: 30px;
+    }
     }
 }
 
 .restos-cards-list {
     display: flex;
-    flex-flow: column wrap;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
+
+    @include desktop {
+        row-gap: 50px;
+        justify-content: space-between;
+    }
+
+    a {
+        width: 100%;
+
+    @include desktop {
+        width: 45%;
+    }}
 }
