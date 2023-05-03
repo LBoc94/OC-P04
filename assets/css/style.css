@@ -19,11 +19,11 @@ nav .logo {
 }
 .restos-card .restos-name {
   grid-row-start: 3;
-  margin-left: 15px;
+  margin-left: 20px;
 }
 .restos-card .restos-location {
   grid-row-start: 4;
-  margin-left: 15px;
+  margin-left: 20px;
 }
 .restos-card .fa-heart {
   grid-column: 2/4;
@@ -45,14 +45,6 @@ nav .logo {
 }
 .menu-resto h1 {
   grid-column-start: 1;
-  grid-row-start: 1;
-}
-.menu-resto .empty-heart {
-  grid-column-start: 2;
-  grid-row-start: 1;
-}
-.menu-resto .full-heart {
-  grid-column-start: 2;
   grid-row-start: 1;
 }
 .menu-resto .hearts {
@@ -135,7 +127,6 @@ a {
 
 .menu-section {
   animation-duration: 1.5s;
-  animation-delay: 0.4s;
   animation-fill-mode: backwards;
   animation-name: slidein;
 }
@@ -248,8 +239,113 @@ footer .logo {
   }
 }
 
-.explo-button {
-  display: inline-block;
+.loader {
+  position: fixed;
+  z-index: 3;
+  background: linear-gradient(#FF79DA, #9356DC);
+  height: 100%;
+  width: 100%;
+  animation: loader 1s cubic-bezier(0.165, 0.84, 0.44, 1) 3s both;
+}
+
+.loader-txt {
+  font-family: Shrikhand;
+  font-size: 4em;
+  color: white;
+  position: absolute;
+  top: 30%;
+  left: 36.5%;
+  animation: textload 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+.loader-plate {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  box-shadow: 5px 7px 32px 5px rgba(0, 0, 0, 0.64);
+  position: absolute;
+  top: 45%;
+  left: 44.5%;
+  background-color: white;
+  z-index: 2;
+}
+
+.loader-anim {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  animation: pizza 3s;
+  position: absolute;
+  box-shadow: inset 0 0 15px #353535;
+  top: 45%;
+  left: 44.5%;
+  animation-fill-mode: both;
+  z-index: 2;
+}
+
+.loader-img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  position: absolute;
+  top: 45%;
+  left: 44.5%;
+  z-index: 2;
+}
+
+@keyframes loader {
+  0% {
+    transform: scale(1);
+    filter: blur(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2);
+    filter: blur(4px);
+    opacity: 0;
+    z-index: -3;
+  }
+}
+@keyframes pizza {
+  0% {
+    background: conic-gradient(#FFFFFF 0deg, rgba(0, 0, 0, 0) 0deg);
+  }
+  12.5% {
+    background: conic-gradient(#FFFFFF 45deg, rgba(0, 0, 0, 0) 46deg);
+  }
+  25% {
+    background: conic-gradient(#FFFFFF 90deg, rgba(0, 0, 0, 0) 91deg);
+  }
+  37.5% {
+    background: conic-gradient(#FFFFFF 135deg, rgba(0, 0, 0, 0) 136deg);
+  }
+  50% {
+    background: conic-gradient(#FFFFFF 180deg, rgba(0, 0, 0, 0) 181deg);
+  }
+  62.5% {
+    background: conic-gradient(#FFFFFF 225deg, rgba(0, 0, 0, 0) 226deg);
+  }
+  75% {
+    background: conic-gradient(#FFFFFF 270deg, rgba(0, 0, 0, 0) 271deg);
+  }
+  87.5% {
+    background: conic-gradient(#FFFFFF 315deg, rgba(0, 0, 0, 0) 316deg);
+  }
+  100% {
+    background: conic-gradient(#FFFFFF 360deg, rgba(0, 0, 0, 0) 360deg);
+  }
+}
+@keyframes textload {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+.main-button {
   width: 220px;
   height: 50px;
   font-size: 1em;
@@ -264,10 +360,10 @@ footer .logo {
   position: relative;
   z-index: 1;
 }
-.explo-button:hover::after {
+.main-button:hover::after {
   opacity: 1;
 }
-.explo-button::after {
+.main-button::after {
   content: "";
   position: absolute;
   top: 0;
@@ -380,7 +476,7 @@ footer .logo {
 .menu-content {
   margin: 13px 0px;
   border-radius: 15px;
-  box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   height: 70px;
   background-color: white;
 }
