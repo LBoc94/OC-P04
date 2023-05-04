@@ -1,12 +1,4 @@
-// @mixin logo-typo($color,$font-size) {
-//     font-family: 'Shrikhand' ;
-//     color: $color;
-//     font-size: $font-size;
-// }
-
-
 // BREAKPOINTS //
-
 @mixin tablet {
     @media (min-width: 729px) {
         @content;
@@ -17,4 +9,19 @@
     @media (min-width: 1024px) {
         @content;
     }
+}
+
+// LOADER //
+@mixin loaderpizza ($size: 130px) {
+    position: fixed;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: $size;
+    height: $size;
+    border-radius: 50%;
+}
+
+@mixin pizzamixin ($degin, $degout) {
+    background: conic-gradient(#FFFFFF #{$degin}deg, transparent #{$degout}deg);
 }

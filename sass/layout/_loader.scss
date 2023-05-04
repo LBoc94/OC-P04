@@ -17,91 +17,28 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    animation: textload 0.6s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: loaderfondu 0.6s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 
-.loadertest {
-    position: fixed;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    animation: textload 0.6s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-}
+.loader-pizza {
+    @include loaderpizza;
+    animation: loaderfondu 0.6s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 
-.loader-plate {
-    width: 130px;
-    height: 130px;
-    border-radius: 50%;
-    box-shadow: 5px 7px 32px 5px rgba(0,0,0,0.64);
-    position: fixed;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    z-index: 2;
-}
-  
-.loader-anim {
-    width: 130px;
-    height: 130px;
-    border-radius: 50%;
-    animation: pizza 2.4s;
-    animation-delay: 0.6s;
-    box-shadow: inset 0 0 15px $dark-grey;
-    position: fixed;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    animation-fill-mode: both;
-    z-index: 2;
-}
-  
-.loader-img {
-    width: 130px;
-    height: 130px;
-    border-radius: 50%;
-    position: fixed;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-}
-
-@keyframes loader {
-    0%{
-        transform:scale(1);
-        filter:blur(0);
-        opacity:1;
+    .loader-plate {
+        @include loaderpizza;
+        background-color: white;
+        box-shadow: 5px 7px 32px 5px rgba(0,0,0,0.64);
     }
-
-    100%{
-        transform:scale(2);
-        filter:blur(4px);
-        opacity:0;
-        z-index: -3;
+    
+    .loader-img {
+        @include loaderpizza (120px);
+    }
+    
+    .loader-anim {
+        @include loaderpizza;
+        animation: pizzanim 2.4s;
+        animation-delay: 0.6s;
+        box-shadow: inset 0 0 15px $dark-grey;
+        animation-fill-mode: both;
     }
 }
-  
-@keyframes pizza {
-    0%   {background: conic-gradient(#FFFFFF 0deg,#0000 0deg)}   
-    12.5%{background: conic-gradient(#FFFFFF 45deg ,#0000 46deg)}    
-    25%  {background: conic-gradient(#FFFFFF 90deg ,#0000 91deg)}    
-    37.5%{background: conic-gradient(#FFFFFF 135deg,#0000 136deg)}   
-    50%  {background: conic-gradient(#FFFFFF 180deg,#0000 181deg)}    
-    62.5%{background: conic-gradient(#FFFFFF 225deg,#0000 226deg)}    
-    75%  {background: conic-gradient(#FFFFFF 270deg,#0000 271deg)}
-    87.5%{background: conic-gradient(#FFFFFF 315deg,#0000 316deg)}
-    100% {background: conic-gradient(#FFFFFF 360deg,#0000 360deg)}
-}
-
-
-@keyframes textload {
-    0% {
-      filter: blur(12px);
-      opacity: 0;
-    }
-    100% {
-      filter: blur(0px);
-      opacity: 1;
-    }
-  }

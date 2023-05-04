@@ -1,0 +1,103 @@
+@use "../abstracts/" as *;
+
+// HERO //
+.section-hero {
+    height: 290px;
+    background-color: $light-grey;
+    text-align: center;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        font-size: 1.5em;
+        font-weight: 700;
+        padding-bottom: 20px;
+
+        @include desktop {
+            font-size: 2.5em;
+        }
+    }
+
+    p {
+        font-size: 1.1em;
+        font-weight: 300;
+        padding-bottom: 33px;
+    }
+}
+
+
+// FONCTIONNEMENT //
+.section-fonct {
+    height: 410px;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+
+    @include desktop {
+        display: block;
+        height: 230px;
+        padding: 50px 90px 50px 90px;
+    }
+
+    h2 {
+        padding-bottom: 35px;
+    }
+}
+
+
+.fonct-cards-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+
+    @include desktop {
+        flex-direction: row;
+    }
+}
+
+
+// HOME-RESTOS //
+.section-home-restos {
+    background-color: $light-grey;
+    padding: 50px 20px 65px 20px;
+
+    @include tablet {
+        padding: 50px;
+    }
+    
+    @include desktop {
+        padding: 35px 90px 30px 90px;
+    }
+
+    .section-title {
+    padding-bottom: 20px;
+
+    @include desktop {
+        padding-bottom: 30px;
+    }
+    }
+}
+
+.restos-cards-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+
+    @include tablet {
+        row-gap: 50px;
+        justify-content: space-between;
+    }
+
+    a {
+        width: 100%;
+
+    @include tablet {
+        width: 45%;
+    }}
+}

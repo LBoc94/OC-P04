@@ -1,5 +1,46 @@
-// HEART ANIMATION //
+@use "../abstracts/" as *;
 
+// LOADER //
+@keyframes loader {
+    0%{
+        transform:scale(1);
+        filter:blur(0);
+        opacity:1;
+    }
+
+    100%{
+        transform:scale(2);
+        filter:blur(4px);
+        opacity:0;
+        z-index: -3;
+    }
+}
+
+@keyframes loaderfondu {
+    0% {
+      filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      filter: blur(0px);
+      opacity: 1;
+    }
+  }
+
+@keyframes pizzanim {
+    0%   {@include pizzamixin (0, 0)}   
+    12.5%{@include pizzamixin (45, 46)}    
+    25%  {@include pizzamixin (90, 91)}    
+    37.5%{@include pizzamixin (135, 136)}   
+    50%  {@include pizzamixin (180, 181)}    
+    62.5%{@include pizzamixin (225, 226)}    
+    75%  {@include pizzamixin (270, 271)}
+    87.5%{@include pizzamixin (315, 316)}
+    100% {@include pizzamixin (360, 360)}
+}
+
+
+// HEART ANIMATION //
 .hearts {
     position: relative;
     width: 1.4em;
