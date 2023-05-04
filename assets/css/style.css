@@ -250,12 +250,21 @@ footer .logo {
 
 .loader-txt {
   font-family: Shrikhand;
-  font-size: 4em;
+  font-size: 3.5em;
   color: white;
   position: absolute;
-  top: 30%;
-  left: 36.5%;
-  animation: textload 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: textload 0.6s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+.loadertest {
+  position: fixed;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: textload 0.6s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
 .loader-plate {
@@ -263,9 +272,10 @@ footer .logo {
   height: 130px;
   border-radius: 50%;
   box-shadow: 5px 7px 32px 5px rgba(0, 0, 0, 0.64);
-  position: absolute;
-  top: 45%;
-  left: 44.5%;
+  position: fixed;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-color: white;
   z-index: 2;
 }
@@ -274,11 +284,13 @@ footer .logo {
   width: 130px;
   height: 130px;
   border-radius: 50%;
-  animation: pizza 3s;
-  position: absolute;
+  animation: pizza 2.4s;
+  animation-delay: 0.6s;
   box-shadow: inset 0 0 15px #353535;
-  top: 45%;
-  left: 44.5%;
+  position: fixed;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   animation-fill-mode: both;
   z-index: 2;
 }
@@ -287,9 +299,10 @@ footer .logo {
   width: 130px;
   height: 130px;
   border-radius: 50%;
-  position: absolute;
-  top: 45%;
-  left: 44.5%;
+  position: fixed;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 2;
 }
 
