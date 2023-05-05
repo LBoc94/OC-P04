@@ -25,11 +25,6 @@ nav .logo {
   grid-row-start: 4;
   margin-left: 20px;
 }
-.restos-card .fa-heart {
-  grid-column: 2/4;
-  grid-row: 3/5;
-  justify-self: center;
-}
 .restos-card .hearts {
   grid-column: 2/4;
   grid-row: 3/5;
@@ -74,7 +69,7 @@ nav .logo {
   color: #353535;
 }
 
-.plat-title, .plat-sub {
+.menu-content .plat-title, .menu-content .plat-sub {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -94,11 +89,6 @@ a {
 * {
   font-family: "Shrikhand", cursive;
   font-family: "Roboto", sans-serif;
-}
-
-.section-title {
-  font-size: 1.5em;
-  font-weight: 700;
 }
 
 @keyframes loader {
@@ -355,6 +345,33 @@ footer .logo {
   animation-fill-mode: both;
 }
 
+.search-bar {
+  height: 50px;
+  background-color: #EAEAEA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar-content {
+  height: 19px;
+}
+
+.fa-location-dot {
+  font-size: 1em;
+  color: #353535;
+}
+
+.search-text {
+  width: 140px;
+  border-style: none;
+  background: none;
+  font-weight: 500;
+  font-size: 1em;
+  color: #353535;
+  padding-left: 15px;
+}
+
 .main-button {
   width: 220px;
   height: 50px;
@@ -396,33 +413,6 @@ footer .logo {
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
   -webkit-text-stroke-width: 0px;
-}
-
-.search-bar {
-  height: 50px;
-  background-color: #EAEAEA;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.search-bar-content {
-  height: 19px;
-}
-
-.fa-location-dot {
-  font-size: 1em;
-  color: #353535;
-}
-
-.search-text {
-  width: 140px;
-  border-style: none;
-  background: none;
-  font-weight: 500;
-  font-size: 1em;
-  color: #353535;
-  padding-left: 15px;
 }
 
 .fonct-card {
@@ -516,6 +506,11 @@ footer .logo {
   position: absolute;
   right: 15px;
   top: 12px;
+}
+
+.section-title {
+  font-size: 1.5em;
+  font-weight: 700;
 }
 
 .section-hero {
@@ -659,6 +654,11 @@ footer .logo {
   font-size: 1.4em;
 }
 
+.menu-section {
+  width: 100%;
+  margin-bottom: 35px;
+}
+
 .menu-section-title {
   text-transform: uppercase;
   font-size: 1em;
@@ -677,31 +677,19 @@ footer .logo {
   display: flex;
   flex-direction: row;
 }
-
-.plat-title {
+.menu-content .plat-title {
   font-size: 1.1em;
   font-weight: 500;
 }
-
-.plat-sub {
+.menu-content .plat-sub {
   font-size: 0.9em;
   font-weight: 300;
 }
-
-.plat-price {
+.menu-content .plat-price {
   font-size: 0.9em;
   font-weight: 700;
   padding-right: 10px;
   justify-self: center;
-}
-
-.menu-section {
-  width: 100%;
-  margin-bottom: 35px;
-}
-
-.menu-button {
-  margin-bottom: 50px;
 }
 
 .menu-content i {
@@ -722,4 +710,8 @@ footer .logo {
   height: 100%;
   width: 60px;
   font-size: 20px;
+}
+
+.menu-button {
+  margin-bottom: 50px;
 }/*# sourceMappingURL=style.css.map */
