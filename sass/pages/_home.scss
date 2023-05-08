@@ -42,13 +42,15 @@
     justify-content: center;
 
     @include desktop {
-        display: block;
         height: 230px;
-        padding: 50px 90px 50px 90px;
+        padding: 50px 0 50px 0;
+        justify-content: initial;
+        justify-items: center;
     }
 
     h2 {
         padding-bottom: 35px;
+        width: 80%;
     }
 }
 
@@ -62,6 +64,8 @@
 
     @include desktop {
         flex-direction: row;
+        width: 80%;
+        gap: 3%;
     }
 }
 
@@ -69,26 +73,27 @@
 // HOME-RESTOS //
 .section-home-restos {
     background-color: $light-grey;
-    padding: 50px 20px 65px 20px;
-
-    @include tablet {
-        padding: 50px;
-    }
+    padding: 50px 0 65px 0;
+    display: grid;
+    justify-items: center;
     
     @include desktop {
-        padding: 35px 90px 30px 90px;
+        padding: 35px 0 30px 0;
     }
 
     .section-title {
     padding-bottom: 20px;
+    width: 90%;
 
     @include desktop {
         padding-bottom: 30px;
+        width: 80%;
     }
     }
 }
 
 .restos-cards-list {
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -97,6 +102,10 @@
     @include tablet {
         row-gap: 50px;
         justify-content: space-between;
+    }
+
+    @include desktop {
+        width: 80%;
     }
 
     a {
