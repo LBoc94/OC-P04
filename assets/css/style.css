@@ -682,6 +682,7 @@ footer .logo {
 .menu-content {
   display: flex;
   flex-direction: row;
+  cursor: pointer;
 }
 .menu-content .plat-title {
   font-size: 1.1em;
