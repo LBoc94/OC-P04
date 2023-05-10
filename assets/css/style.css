@@ -436,7 +436,7 @@ footer .logo {
   padding: 0 20px;
   color: #7E7E7E;
 }
-.fonct-card .fa-store {
+.fonct-card:hover > i {
   color: #9356DC;
 }
 
@@ -714,7 +714,6 @@ footer .logo {
 }
 
 .menu-content:hover i {
-  height: 100%;
   width: 60px;
   font-size: 20px;
 }

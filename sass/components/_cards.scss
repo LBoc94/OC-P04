@@ -25,7 +25,7 @@
        color: #7E7E7E;
     }
 
-    .fa-store {
+    &:hover > i {
         color: $main-color;
     }
 }
